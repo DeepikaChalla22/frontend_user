@@ -1,0 +1,61 @@
+.flex3 {
+    display: flex; /* Use flexbox layout */
+    justify-content:space-between;
+    align-items: center; /* Center items vertically */
+  }
+  .Employee-details {
+    margin-right: 10px; /* Add margin to the right of EmployeeDetails */
+  }
+
+  /* .weekend-cell {
+    background-color: #ded1bf; 
+    font-weight: bold; 
+  }
+   */
+
+   .weekend-cell {
+    background-color: #ece8e3; /* Customize the background color */
+    font-weight: bold; /* Customize the font weight or other styles */
+    position: relative; /* Make the positioning relative for pseudo-elements */
+  }
+  
+  .weekend-cell::after {
+    content: "Weekend"; /* Add your desired text here */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Customize the text styles */
+    color: #573504; /* Text color */
+    font-size: 14px; /* Font size */
+    /* Add any other styles you want */
+  }
+  .col3{
+    border: 2px solid;
+    border-radius: 25px;
+    margin: 25px;
+    padding: 39px;
+  }
+
+/* Circular percentage chart styles */
+.circular-chart {
+  display: block;
+  margin: 0 auto;
+  width: 36px;
+  height: 36px;
+}
+
+.progress-ring-circle-bg {
+  stroke: #eee; /* Background color */
+}
+
+.progress-ring-circle {
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.percentage-text {
+  font-size: 10px; /* Adjust the font size as needed */
+  fill: green; /* Color of the percentage text */
+}
